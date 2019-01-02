@@ -34,7 +34,7 @@ public class StubGenerator {
         Supplier<EmpName> empNameSupplier = ()->{
             return new EmpName("Mia","Ashley");
         };
-        empMap.computeIfAbsent(empIdSupplier.get(),id -> new Employee(id,empNameSupplier.get()));
+        empMap.computeIfAbsent(empIdSupplier.get(),id -> new Employee(id,empNameSupplier.get(),EmpSex.FEMALE));
 
 
         empMap.computeIfAbsent(new EmpId(205,32346676l), id-> new Employee(id,new EmpName("Grace","Kelly"),EmpSex.FEMALE));

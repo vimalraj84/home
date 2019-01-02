@@ -6,11 +6,6 @@ public class Employee {
     private EmpPay pay;
     private EmpSex sex;
 
-    public Employee(EmpId empId, EmpName name) {
-        this.empId = empId;
-        this.name = name;
-    }
-
     public Employee(EmpId empId, EmpName name, EmpSex sex) {
         this.empId = empId;
         this.name = name;

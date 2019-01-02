@@ -12,9 +12,8 @@ public class StreamReduction {
 
     public static void main (String[] a){
         Map<EmpId, Employee> input = StubGenerator.getEmpData();
-        //Concurrent Reduction
         Map<EmpSex, List<Employee>> empGroup = input.entrySet().stream()
-                .map(emp -> emp.getValue())
+                .map(entry -> entry.getValue())
                 .sorted((emp1,emp2) -> emp1.getName().getfName().compareTo(emp2.getName().getfName()))
                 .collect(Collectors.groupingBy(Employee::getSex));
         System.out.println("Male Employee :\n "+ empGroup);

@@ -16,7 +16,7 @@ public class StreamFilter {
 
         //Filter
         List<Employee> maleEmps = input.entrySet().stream()
-                .map(emp -> emp.getValue())
+                .map(entry -> entry.getValue())
                 .filter(emp -> EmpSex.MALE.equals(emp.getSex()))
                 .sorted((emp1,emp2) -> emp1.getName().getfName().compareTo(emp2.getName().getfName()))
                 .collect(Collectors.toList());
@@ -24,7 +24,7 @@ public class StreamFilter {
 
 
         List<Employee> femaleEmps = input.entrySet().stream()
-                .map(emp -> emp.getValue())
+                .map(entry -> entry.getValue())
                 .filter(emp -> EmpSex.FEMALE.equals(emp.getSex()))
                 .sorted((emp1,emp2) -> emp1.getName().getfName().compareTo(emp2.getName().getfName()))
                 .collect(Collectors.toList());
