@@ -4,16 +4,24 @@ public class Employee {
     private EmpId empId;
     private EmpName name;
     private EmpPay pay;
+    private EmpSex sex;
 
     public Employee(EmpId empId, EmpName name) {
         this.empId = empId;
         this.name = name;
     }
 
-    public Employee(EmpId empId, EmpName name, EmpPay pay) {
+    public Employee(EmpId empId, EmpName name, EmpSex sex) {
+        this.empId = empId;
+        this.name = name;
+        this.sex = sex;
+    }
+
+    public Employee(EmpId empId, EmpName name, EmpPay pay, EmpSex sex) {
         this.empId = empId;
         this.name = name;
         this.pay = pay;
+        this.sex = sex;
     }
 
     public EmpId getEmpId() {
@@ -40,8 +48,13 @@ public class Employee {
         this.name = name;
     }
 
+    public EmpSex getSex() {
+        return sex;
+    }
 
-
+    public void setSex(EmpSex sex) {
+        this.sex = sex;
+    }
 
     @Override
     public String toString() {

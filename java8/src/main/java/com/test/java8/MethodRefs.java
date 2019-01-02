@@ -2,7 +2,6 @@ package com.test.java8;
 
 import com.test.bo.EmpId;
 import com.test.bo.EmpName;
-import com.test.bo.EmpPay;
 import com.test.bo.Employee;
 
 import java.util.HashMap;
@@ -33,7 +32,6 @@ public class MethodRefs {
 
     }
 
-
     public static Map<EmpId, Employee> getEmpData(){
         //Using Employee class
         Map<EmpId, Employee> empMap = new HashMap<>();
@@ -49,7 +47,6 @@ public class MethodRefs {
 
         System.out.println("Printed with computeIfAbsent::Lamda :"+ empMap);
 
-
         empMap.computeIfAbsent(new EmpId(333,42345678l), id -> new Employee(empId2, new EmpName("Michelle","Gee")));
         System.out.println("Printed with computeIfAbsent::Lamda :"+ empMap);
 
@@ -64,17 +61,6 @@ public class MethodRefs {
 
         empMap.computeIfAbsent(empIdSupplier.get(),id -> new Employee(id,empNameSupplier.get()));
         System.out.println("Printed with Supplier::Lamda :"+ empMap);
-
-
-        empMap.computeIfAbsent(new EmpId(205,32346676l), id-> new Employee(id,new EmpName("Grace","Kelly")));
-        System.out.println("Printed with computeIfAbsent::Lamda :"+ empMap);
-
-        empMap.computeIfAbsent(new EmpId(106,72545678l), id-> new Employee(id,new EmpName("Aria","Gomez")));
-        System.out.println("Printed with computeIfAbsent::Lamda :"+ empMap);
-
-        empMap.computeIfAbsent(new EmpId(117,212345678l), id-> new Employee(id,new EmpName("Noelle","Gray")));
-        System.out.println("Printed with computeIfAbsent::Lamda :"+ empMap);
-
         return empMap;
     }
 

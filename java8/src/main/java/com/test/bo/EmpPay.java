@@ -21,11 +21,6 @@ public class EmpPay {
         this.payFreq = payFreq;
     }
 
-    public EmpPay(long payRate, int payFreq) {
-        this.payRate = payRate;
-        this.payFreq = payFreq;
-    }
-
     @Override
     public String toString() {
         return "EmpPay{" +

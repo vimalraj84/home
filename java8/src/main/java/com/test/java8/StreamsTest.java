@@ -13,14 +13,14 @@ public class StreamsTest {
 
     public static void main(String[] a){
 
-        Map<EmpId, Employee> input = MethodRefs.getEmpData();
+        Map<EmpId, Employee> input = StubGenerator.getEmpData();
 
         List<EmpName> empLNameList =  input.entrySet().stream()
                 .map(emp -> emp.getValue().getName())
                 .distinct()
                 .sorted((empNm1,empNm2) -> empNm1.getlName().compareTo(empNm2.getlName()))
                 .collect(Collectors.toList());
-        System.out.println(empLNameList);
+        System.out.println("Employees Sorted by Last Name :\n " + empLNameList);
 
 
         List<EmpName> empFNameList = input.entrySet().stream()
@@ -28,27 +28,34 @@ public class StreamsTest {
                 .distinct()
                 .sorted(Comparator.comparing(EmpName::getfName))
                 .collect(Collectors.toList());
-        System.out.println(empFNameList);
+        System.out.println("Employees Sorted by First Name :\n " + empFNameList);
 
         List<EmpId> empIds = input.entrySet().stream()
                 .map(emp -> emp.getKey())
                 .sorted(Comparator.comparing(EmpId::getId))
                 .collect(Collectors.toList());
-        System.out.println(empIds);
+        System.out.println("Employees Sorted by Id :\n " + empIds);
 
 
         List<Integer> empNos = input.entrySet().stream()
                 .map(emp -> emp.getKey().getId())
                 .sorted((empId1,empId2) -> empId1.compareTo(empId2))
                 .collect(Collectors.toList());
-        System.out.println(empNos);
+        System.out.println("Employees Sorted by Id :\n " + empNos);
 
 
         List<Long> empSsn = input.entrySet().stream()
                 .map(emp -> emp.getKey().getSsn())
                 .sorted((empS1,empS2) -> empS1.compareTo(empS2))
                 .collect(Collectors.toList());
-        System.out.println(empSsn);
+        System.out.println("Employees Sorted by SSN :\n " + empSsn);
+
+
+
+
+
+
+
 
     }
 
