@@ -1,6 +1,11 @@
 package com.test.java8;
 
 import com.test.bo.*;
+import com.test.bo.emp.EmpId;
+import com.test.bo.emp.EmpName;
+import com.test.bo.emp.EmpPay;
+import com.test.bo.emp.EmpSex;
+import com.test.bo.emp.Employee;
 
 import java.util.HashMap;
 import java.util.Map;

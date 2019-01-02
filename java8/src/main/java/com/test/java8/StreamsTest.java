@@ -1,13 +1,13 @@
 package com.test.java8;
 
-import com.test.bo.EmpId;
-import com.test.bo.EmpName;
-import com.test.bo.Employee;
-
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
+
+import com.test.bo.emp.EmpId;
+import com.test.bo.emp.EmpName;
+import com.test.bo.emp.Employee;
 
 public class StreamsTest {
 

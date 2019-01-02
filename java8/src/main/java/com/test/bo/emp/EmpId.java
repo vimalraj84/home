@@ -1,4 +1,4 @@
-package com.test.bo;
+package com.test.bo.emp;
 
 import com.test.java8.MethodRefs;
 

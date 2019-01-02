@@ -1,4 +1,4 @@
-package com.test.bo;
+package com.test.bo.emp;
 
 public class EmpName implements Name {
     private String fName;

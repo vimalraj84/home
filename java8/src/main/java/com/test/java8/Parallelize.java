@@ -1,14 +1,14 @@
 package com.test.java8;
 
-import com.test.bo.EmpId;
-import com.test.bo.EmpSex;
-import com.test.bo.Employee;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
+
+import com.test.bo.emp.EmpId;
+import com.test.bo.emp.EmpSex;
+import com.test.bo.emp.Employee;
 
 public class Parallelize {
 
