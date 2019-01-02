@@ -20,7 +20,6 @@ public class StreamsTest {
                 .distinct()
                 .sorted((empNm1,empNm2) -> empNm1.getlName().compareTo(empNm2.getlName()))
                 .collect(Collectors.toList());
-
         System.out.println(empLNameList);
 
 
@@ -29,14 +28,27 @@ public class StreamsTest {
                 .distinct()
                 .sorted(Comparator.comparing(EmpName::getfName))
                 .collect(Collectors.toList());
-
         System.out.println(empFNameList);
 
-//        List<EmpId> empIds = input.entrySet().stream()
-//                .map(emp -> emp.getKey().getId())
-//                .sorted(Comparator.comparingInt(EmpId::getId))
-//                .collect(Collectors.toList());
-//        System.out.println(empIds);
+        List<EmpId> empIds = input.entrySet().stream()
+                .map(emp -> emp.getKey())
+                .sorted(Comparator.comparing(EmpId::getId))
+                .collect(Collectors.toList());
+        System.out.println(empIds);
+
+
+        List<Integer> empNos = input.entrySet().stream()
+                .map(emp -> emp.getKey().getId())
+                .sorted((empId1,empId2) -> empId1.compareTo(empId2))
+                .collect(Collectors.toList());
+        System.out.println(empNos);
+
+
+        List<Long> empSsn = input.entrySet().stream()
+                .map(emp -> emp.getKey().getSsn())
+                .sorted((empS1,empS2) -> empS1.compareTo(empS2))
+                .collect(Collectors.toList());
+        System.out.println(empSsn);
 
     }
 

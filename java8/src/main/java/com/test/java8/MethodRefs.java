@@ -38,24 +38,24 @@ public class MethodRefs {
         //Using Employee class
         Map<EmpId, Employee> empMap = new HashMap<>();
 
-        EmpId empId = new EmpId(1,1231l);
+        EmpId empId = new EmpId(101,123456781l);
         EmpName empName = new EmpName("Caitlin","Summer");
         empMap.put(empId, new Employee(empId,empName));
         System.out.println("Printed with regular :"+ empMap);
 
-        EmpId empId2 = new EmpId(2,1232l);
+        EmpId empId2 = new EmpId(102,12355678l);
 
         empMap.computeIfAbsent(empId2, id -> new Employee(id, new EmpName("Anna","Robert")));
 
         System.out.println("Printed with computeIfAbsent::Lamda :"+ empMap);
 
 
-        empMap.computeIfAbsent(new EmpId(3,1233l), id -> new Employee(empId2, new EmpName("Michelle","Gee")));
+        empMap.computeIfAbsent(new EmpId(333,42345678l), id -> new Employee(empId2, new EmpName("Michelle","Gee")));
         System.out.println("Printed with computeIfAbsent::Lamda :"+ empMap);
 
 
         Supplier<EmpId> empIdSupplier = ()->{
-            return new EmpId(4,1234l);
+            return new EmpId(104,62345678);
         };
 
         Supplier<EmpName> empNameSupplier = ()->{
@@ -66,13 +66,13 @@ public class MethodRefs {
         System.out.println("Printed with Supplier::Lamda :"+ empMap);
 
 
-        empMap.computeIfAbsent(new EmpId(5,1235l), id-> new Employee(id,new EmpName("Grace","Kelly")));
+        empMap.computeIfAbsent(new EmpId(205,32346676l), id-> new Employee(id,new EmpName("Grace","Kelly")));
         System.out.println("Printed with computeIfAbsent::Lamda :"+ empMap);
 
-        empMap.computeIfAbsent(new EmpId(6,1236l), id-> new Employee(id,new EmpName("Aria","Gomez")));
+        empMap.computeIfAbsent(new EmpId(106,72545678l), id-> new Employee(id,new EmpName("Aria","Gomez")));
         System.out.println("Printed with computeIfAbsent::Lamda :"+ empMap);
 
-        empMap.computeIfAbsent(new EmpId(7,1236l), id-> new Employee(id,new EmpName("Noelle","Gray")));
+        empMap.computeIfAbsent(new EmpId(117,212345678l), id-> new Employee(id,new EmpName("Noelle","Gray")));
         System.out.println("Printed with computeIfAbsent::Lamda :"+ empMap);
 
         return empMap;
