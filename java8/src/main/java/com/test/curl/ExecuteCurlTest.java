@@ -1,35 +1,42 @@
 package com.test.curl;
 
-import java.io.*;
-import java.util.Arrays;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class ExecuteCurlTest {
 
-    public static void main(String arg[]) throws IOException {
+    public static void main(String[] args) {
 
-        ProcessBuilder pb = new ProcessBuilder(
-                "curl",
-                "-s",
-                " http://172.16.32.217:9999/mule/applications");
+        String username = "admin";
+        String password = "admin";
+        String url = "http://172.16.32.217:9999/mule/applications";
+        String path = "/";
+        String Content_Type = "application/json";
+        String charset = "utf-8";
 
-        pb.directory(new File("/c/tmp/output"));
-        pb.redirectErrorStream(true);
-        Process p = pb.start();
-        InputStream is = p.getInputStream();
+//        String[] command = { "curl", "-u", username + ":" + password, "-X", "POST", "-F", "cmd=unlockPage", "-F",
+//                "path=" + path, "-F", "_charset_="+charset, url };
 
-        FileOutputStream outputStream = new FileOutputStream("/c/tmp/output/out.json");
+        String[] command = { "curl","-X", "GET", url };
 
-        BufferedInputStream bis = new BufferedInputStream(is);
-        byte[] bytes = new byte[100];
-        int numberByteReaded;
-        while ((numberByteReaded = bis.read(bytes, 0, 100)) != -1) {
+        ProcessBuilder process = new ProcessBuilder(" curl -s http://172.16.32.217:9999/mule/applications");
+        Process p;
+        try {
+            p = process.start();
+            BufferedReader reader = new BufferedReader(new InputStreamReader(p.getInputStream()));
+            StringBuilder builder = new StringBuilder();
+            String line = null;
+            while ((line = reader.readLine()) != null) {
+                builder.append(line);
+                builder.append(System.getProperty("line.separator"));
+            }
+            String result = builder.toString();
+            System.out.print(result);
 
-            outputStream.write(bytes, 0, numberByteReaded);
-            Arrays.fill(bytes, (byte) 0);
-
+        } catch (IOException e) {
+            System.out.print("error");
+            e.printStackTrace();
         }
-        outputStream.flush();
-        outputStream.close();
-
     }
 }
