@@ -1,7 +1,5 @@
 package com.test.java8;
 
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -14,8 +12,6 @@ public class Parallelize {
 
     public static void main (String[] a){
         Map<EmpId, Employee> input = StubGenerator.getEmpData();
-
-        List<Integer> parallelStorage = Collections.synchronizedList(new ArrayList<>());
 
         List<Employee> output = input.entrySet()
                 .parallelStream()
