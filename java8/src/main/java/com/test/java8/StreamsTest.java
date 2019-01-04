@@ -1,9 +1,12 @@
 package com.test.java8;
 
+import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import com.test.bo.emp.EmpId;
 import com.test.bo.emp.EmpName;
@@ -49,6 +52,12 @@ public class StreamsTest {
                 .sorted((empS1,empS2) -> empS1.compareTo(empS2))
                 .collect(Collectors.toList());
         System.out.println("Employees Sorted by SSN :\n " + empSsn);
+        
+        //initializing a Array
+        
+        Integer[] intArr = Stream.generate(() -> 1).limit(10).toArray(Integer[]::new);
+        
+        Arrays.stream(intArr).forEachOrdered(i -> System.out.println(i));
     }
 
 }
