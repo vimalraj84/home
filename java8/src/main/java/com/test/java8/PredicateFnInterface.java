@@ -20,8 +20,8 @@ public class PredicateFnInterface {
         System.out.println("\n------\n");
         
         System.out.print("Printing square Number... ");
-        Predicate<Integer> sqNumPre = num -> (num * num > 0);
-        print(sqNumPre,input);
+        Predicate<Integer> sqNumPre = num -> (num > 0);
+        print(sqNumPre, input);
         System.out.println("\n------\n");
         
     }

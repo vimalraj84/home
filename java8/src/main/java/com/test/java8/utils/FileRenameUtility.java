@@ -1,4 +1,4 @@
-package com.test.java8;
+package com.test.java8.utils;
 
 import java.io.File;
 import java.util.Arrays;
