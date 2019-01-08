@@ -30,7 +30,7 @@
 		<junit.version>4.12</junit.version>
 		<tomcat.version>9.0.14</tomcat.version>
 		<packaging>war</packaging>
-		<failOnMissingWebXml>false</failOnMissingWebXml>
+		<!--<failOnMissingWebXml>false</failOnMissingWebXml>-->
 	</properties>
 
 	<dependencies>
