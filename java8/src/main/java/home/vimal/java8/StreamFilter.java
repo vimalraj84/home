@@ -29,5 +29,12 @@ public class StreamFilter {
                 .sorted((emp1,emp2) -> emp1.getName().getfName().compareTo(emp2.getName().getfName()))
                 .collect(Collectors.toList());
         System.out.println("Female Employee :\n "+ femaleEmps);
+        
+        
+        Map<EmpSex, List<Employee>> empGroup = input.entrySet().stream()
+                .map(entry -> entry.getValue())
+                .sorted((emp1,emp2) -> emp1.getName().getfName().compareTo(emp2.getName().getfName()))
+                .collect(Collectors.groupingBy(Employee::getSex));
+        System.out.println("Male Employee :\n "+ empGroup);
     }
 }

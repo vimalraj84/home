@@ -31,7 +31,6 @@ public class Fibonacci {
 
     public static void withJava8(){
         System.out.println("Fibonacci with Java 8");
-        Stream.iterate(new long[]{ 0, 1 }, p -> new long[]{ p[1], p[0]+p[1] })
-                .limit(10).forEach(p -> System.out.println(p[0]));
+        Stream.iterate(new long[]{ 0, 1 }, p -> new long[]{ p[1], p[0]+p[1] }).limit(10).forEach(p -> System.out.println(p[0]));
     }
 }

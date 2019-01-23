@@ -20,6 +20,8 @@ public class Palindrome {
     }
 
     public static boolean checkPalindrome(String ip){
-        return IntStream.range(0, ip.length() / 2).noneMatch(i -> ip.charAt(i) != ip.charAt(ip.length() - i - 1));
+        return IntStream
+        		.range(0, ip.length() / 2)
+        		.noneMatch(i -> ip.charAt(i) != ip.charAt(ip.length() - i - 1));
     }
 }
