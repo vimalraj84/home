@@ -22,4 +22,11 @@ public class HelloWorldController {
         return IntStream.range(0, input).mapToObj(i -> "Printing : " + i).collect(Collectors.toList());
     }
 
+    @GetMapping("/printFibonacci")
+    @ResponseBody
+    public Collection<String> printFibonacci(@RequestParam("input") int input) {
+        return IntStream.range(0, input).mapToObj(i -> "Printing : " + i).collect(Collectors.toList());
+    }
+
+
 }
