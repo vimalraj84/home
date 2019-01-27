@@ -16,7 +16,8 @@ public class Factorial {
 		//Where, identity is initial value of type T 
 		// Accumulator is a function for combining two values.
 		
-		return IntStream.rangeClosed(1, ip).reduce(/*identiry*/1, /*accumulator*/(out, in) -> out * in);
+		return IntStream.rangeClosed(1, ip)
+				.reduce(/*identiry*/1, /*accumulator*/(out, in) -> out * in);				
 	}
 
 }
