@@ -9,8 +9,8 @@ public class HelloWorldService {
 	@Value("${name:World}")
 	private String name;
 
-	public String getHelloMessage() {
-		return String.join(" - " ,"Hello" , this.name,"Welcome");
+	public String getHelloMessage(String name) {
+		return String.join(" - " ,"Hello" , name,"Welcome");
 	}
 
 }
