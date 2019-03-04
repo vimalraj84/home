@@ -2,6 +2,7 @@ package home.vimal.bo.emp;
 
 public class Employee {
     private EmpId empId;
+    private int age;
     private EmpName name;
     private EmpPay pay;
     private EmpSex sex;
@@ -17,6 +18,14 @@ public class Employee {
         this.name = name;
         this.pay = pay;
         this.sex = sex;
+    }
+    
+    public Employee(EmpId empId, EmpName name, EmpPay pay, EmpSex sex, int age) {
+        this.empId = empId;
+        this.name = name;
+        this.pay = pay;
+        this.sex = sex;
+        this.age= age;
     }
 
     public EmpId getEmpId() {
@@ -50,12 +59,21 @@ public class Employee {
     public void setSex(EmpSex sex) {
         this.sex = sex;
     }
+    
+    public int getAge() {
+		return age;
+	}
 
-    @Override
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	@Override
     public String toString() {
         return "Employee{" +
                 "empId=" + empId +
                 ", name=" + name +
+                ", age=" + age +
                 '}';
     }
 }

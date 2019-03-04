@@ -1,4 +1,4 @@
-package home.vimal.util;
+package home.vimal.java8.mt;
 
 public class LoadTest {
 

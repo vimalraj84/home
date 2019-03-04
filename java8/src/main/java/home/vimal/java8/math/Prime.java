@@ -8,6 +8,7 @@ public class Prime {
 
 		printPrime(999);
 		printSqrt(10);
+		System.out.println(isPrime(12));
 	}
 
 	public static void printPrime(int ip) {

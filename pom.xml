@@ -16,6 +16,8 @@
 	<modules>
 		<module>java8</module>
 		<module>spring-boot-ho</module>
+        <module>design-pattern</module>
+        <module>poi</module>
 	</modules>
 
     
