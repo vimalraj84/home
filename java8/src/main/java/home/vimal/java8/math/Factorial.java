@@ -1,11 +1,14 @@
 package home.vimal.java8.math;
 
+import java.util.Scanner;
 import java.util.stream.IntStream;
 
 public class Factorial {
 	
 	public static void main (String[] a) {
-		System.out.println(fact(5));
+		Scanner s = new Scanner(System.in);
+		
+		System.out.println(fact(s.nextInt()));
 	}
 	
 	public static int fact(int ip) {
@@ -14,7 +17,7 @@ public class Factorial {
 		//and second argument is the current stream element.
 		
 		//Where, identity is initial value of type T 
-		// Accumulator is a function for combining two values.
+		//Accumulator is a function for combining two values.
 		
 		return IntStream.rangeClosed(1, ip)
 				.reduce(/*identiry*/1, /*accumulator*/(out, in) -> out * in);				
