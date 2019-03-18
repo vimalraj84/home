@@ -107,6 +107,7 @@ public class CheckingAccount implements Account {
 
 	@Override
 	public Balance getBalance() {
+		System.out.println("Checking Account Balance");
 		return new Balance();
 	}
 

@@ -6,7 +6,7 @@ public class IraAccount implements Account {
 
 	@Override
 	public Balance getBalance() {
-		
+		System.out.println("IRA Account Balance");
 		return new Balance();
 	}
 

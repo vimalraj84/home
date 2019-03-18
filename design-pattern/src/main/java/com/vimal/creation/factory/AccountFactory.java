@@ -10,7 +10,7 @@ import com.vimal.bo.acct.SavingsAccount;
 
 public class AccountFactory {
 
-	public static Account accountCreaor(String acctType) {
+	public static Account accountCreator(String acctType) {
 		
 		switch(acctType) {
 		case "IRA":

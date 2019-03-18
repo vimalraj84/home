@@ -6,6 +6,7 @@ public class CdAccount implements Account {
 
 	@Override
 	public Balance getBalance() {
+		System.out.println("CD Account Balance");
 		return new Balance();
 	}
 
