@@ -7,8 +7,8 @@
 	<artifactId>java8</artifactId>
 
 	<parent>
-		<groupId>home.vimal</groupId>
-		<artifactId>home</artifactId>
+		<groupId>com.vimal</groupId>
+		<artifactId>training</artifactId>
 		<version>1.0-SNAPSHOT</version>
 		<relativePath>../pom.xml</relativePath>
 	</parent>
@@ -43,6 +43,11 @@
                     <groupId>commons-logging</groupId>
                 </exclusion>
             </exclusions>
+        </dependency>
+        <dependency>
+        	<groupId>com.vimal</groupId>
+        	<artifactId>bom</artifactId>
+        	<version>${project.version}</version>
         </dependency>
 	</dependencies>
 
