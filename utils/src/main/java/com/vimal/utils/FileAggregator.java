@@ -1,4 +1,4 @@
-package com.vimal.util;
+package com.vimal.utils;
 
 import java.io.File;
 import java.io.IOException;
@@ -22,7 +22,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class FileAggregator {
 
-	public static void main(String[] args) throws InvalidFormatException, IOException {
+	public static void main(String[] args) throws  IOException, InvalidFormatException {
 
 
 		File file = new File("C:\\Temp\\aquery_input");

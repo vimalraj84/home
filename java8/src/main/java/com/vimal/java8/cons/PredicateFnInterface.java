@@ -1,4 +1,4 @@
-package com.vimal.java8;
+package com.vimal.java8.cons;
 
 import java.util.Arrays;
 import java.util.function.Predicate;

@@ -1,4 +1,4 @@
-package com.vimal.util;
+package com.vimal.utils;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Set;

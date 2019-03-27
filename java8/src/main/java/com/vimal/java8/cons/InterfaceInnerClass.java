@@ -1,4 +1,4 @@
-package com.vimal.util;
+package com.vimal.java8.cons;
 
 public interface InterfaceInnerClass {
 	

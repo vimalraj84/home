@@ -1,10 +1,11 @@
-package com.vimal.java8;
+package com.vimal.java8.cons;
 
 import java.util.Map;
 import java.util.stream.IntStream;
 
 import com.vimal.bo.emp.EmpId;
 import com.vimal.bo.emp.Employee;
+import com.vimal.bo.utils.StubGenerator;
 
 public class StreamReduction {
 

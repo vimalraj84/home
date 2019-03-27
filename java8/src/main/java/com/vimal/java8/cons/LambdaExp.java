@@ -1,4 +1,4 @@
-package com.vimal.java8;
+package com.vimal.java8.cons;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -7,7 +7,6 @@ import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Supplier;
 import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 
 public class LambdaExp {
 

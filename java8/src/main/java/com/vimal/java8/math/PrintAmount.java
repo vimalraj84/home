@@ -29,7 +29,7 @@ public class PrintAmount {
 	private static void withEnum(String[] amount) {
 		int dollor = Integer.parseInt(amount[0]);
 
-		System.out.format("%s Hundred and",Ones.getOnes(dollor/100));
+		System.out.format("%s Hundred ",Ones.getOnes(dollor/100));
 
 		if(dollor%100  < 20)
 			System.out.format(" %s", Ones.getOnes(dollor%100)); 

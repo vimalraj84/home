@@ -1,4 +1,4 @@
-package com.vimal.curl;
+package com.vimal.utils.curl;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -10,7 +10,7 @@ public class ExecuteCurlTest {
 
         String username = "admin";
         String password = "admin";
-        String url = "http://172.16.32.217:9999/mule/applications";
+        String url = "http://162.216.52.217:9999/mule/applications";
         String path = "/";
         String Content_Type = "application/json";
         String charset = "utf-8";
@@ -20,7 +20,7 @@ public class ExecuteCurlTest {
 
         String[] command = { "curl","-X", "GET", url };
 
-        ProcessBuilder process = new ProcessBuilder(" curl -s http://172.16.32.217:9999/mule/applications");
+        ProcessBuilder process = new ProcessBuilder(" curl -s http://162.216.52.217:9999/mule/applications");
         Process p;
         try {
             p = process.start();

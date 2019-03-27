@@ -1,4 +1,4 @@
-package com.vimal.java8.math;
+package com.vimal.java8.string;
 
 import java.util.ArrayList;
 import java.util.List;

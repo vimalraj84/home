@@ -6,6 +6,7 @@ public class Factorial {
 	
 	public static void main (String[] a) {
 		System.out.println(fact(5));
+		System.out.println(fact7(5));
 	}
 	
 	public static int fact(int ip) {
@@ -18,6 +19,14 @@ public class Factorial {
 		
 		return IntStream.rangeClosed(1, ip)
 				.reduce(/*identiry*/1, /*accumulator*/(out, in) -> out * in);				
+	}
+	
+	
+	public static int fact7(int n) {
+	    if (n <= 2) {
+	        return n;
+	    }
+	    return n * fact7(n - 1);
 	}
 
 }

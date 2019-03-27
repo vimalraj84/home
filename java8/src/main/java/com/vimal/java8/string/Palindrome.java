@@ -1,6 +1,5 @@
-package com.vimal.java8.math;
+package com.vimal.java8.string;
 
-import java.util.Arrays;
 import java.util.stream.IntStream;
 
 public class Palindrome {
@@ -11,11 +10,7 @@ public class Palindrome {
 
         StringBuilder builder = new StringBuilder(ip);
         System.out.println("Is Palindrome: " + builder.reverse().toString().equalsIgnoreCase(ip));
-        //String to integer array
-        IntStream intStream = ip.chars();
-
-        char[] ipCAry = ip.toCharArray();
-
+       
         System.out.println("Is Palindrome: " + checkPalindrome(ip));
     }
 

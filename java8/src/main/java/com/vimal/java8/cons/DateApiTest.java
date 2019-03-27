@@ -1,6 +1,13 @@
-package com.vimal.java8;
+package com.vimal.java8.cons;
 
-import java.time.*;
+import java.time.Duration;
+import java.time.Instant;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.OffsetDateTime;
+import java.time.OffsetTime;
+import java.time.ZoneId;
 import java.util.Date;
 
 public class DateApiTest {

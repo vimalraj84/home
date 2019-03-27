@@ -13,7 +13,7 @@ public class BubbleSort {
 
 	public static void main (String[] a) {
 
-		int[] ip = new int[] {40,12,90,43,56};
+		int[] ip = new int[] { 3, 2, 5, 1, 4 };
 
 
 		//The sorting algorithm is a Dual-Pivot Quicksort. 

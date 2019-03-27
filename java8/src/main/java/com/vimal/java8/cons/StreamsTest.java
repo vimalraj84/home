@@ -1,4 +1,4 @@
-package com.vimal.java8;
+package com.vimal.java8.cons;
 
 import java.util.Arrays;
 import java.util.Comparator;
@@ -10,6 +10,7 @@ import java.util.stream.Stream;
 import com.vimal.bo.emp.EmpId;
 import com.vimal.bo.emp.EmpName;
 import com.vimal.bo.emp.Employee;
+import com.vimal.bo.utils.StubGenerator;
 
 public class StreamsTest {
 

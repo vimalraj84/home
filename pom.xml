@@ -25,6 +25,7 @@
 		<module>design-pattern</module>
 		<module>poi</module>
 		<module>data_structure</module>
+		<module>utils</module>
 	</modules>
 
 

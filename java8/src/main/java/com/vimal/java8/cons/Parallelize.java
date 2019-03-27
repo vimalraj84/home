@@ -1,4 +1,4 @@
-package com.vimal.java8;
+package com.vimal.java8.cons;
 
 import java.util.List;
 import java.util.Map;
@@ -7,6 +7,7 @@ import java.util.stream.Collectors;
 import com.vimal.bo.emp.EmpId;
 import com.vimal.bo.emp.EmpSex;
 import com.vimal.bo.emp.Employee;
+import com.vimal.bo.utils.StubGenerator;
 
 public class Parallelize {
 
