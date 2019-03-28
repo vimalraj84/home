@@ -7,7 +7,6 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import home.vimal.sb.aop.AspectLog;
 import home.vimal.sb.service.HelloWorldService;
 
 //TODO: Not working for two spring boot application classes.
@@ -15,6 +14,7 @@ import home.vimal.sb.service.HelloWorldService;
 //@SpringBootApplication annotation to mark the main class of a Spring Boot application
 //@SpringBootApplication encapsulates @Configuration, @EnableAutoConfiguration, and @ComponentScan annotations with their default attributes.
 @SpringBootApplication //or use @Configuration @EnableAutoConfiguration @ComponentScan
+//@EnableDiscoveryClient
 public class HelloWorld implements CommandLineRunner {
 
 	// Simple example shows how a command line spring application can execute an

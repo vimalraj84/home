@@ -7,8 +7,8 @@
 	<artifactId>java8</artifactId>
 
 	<parent>
-		<groupId>home.vimal</groupId>
-		<artifactId>home</artifactId>
+		<groupId>com.vimal</groupId>
+		<artifactId>training</artifactId>
 		<version>1.0-SNAPSHOT</version>
 		<relativePath>../pom.xml</relativePath>
 	</parent>
@@ -28,21 +28,10 @@
 			<artifactId>commons-net</artifactId>
 			<version>3.6</version>
 		</dependency>
-		<dependency>
-            <groupId>org.apache.poi</groupId>
-            <artifactId>poi-ooxml</artifactId>
-            <version>${poi.version}</version>
-        </dependency>
         <dependency>
-            <groupId>org.jxls</groupId>
-            <artifactId>jxls-jexcel</artifactId>
-            <version>${jexcel.version}</version>
-            <exclusions>
-                <exclusion>
-                    <artifactId>commons-logging</artifactId>
-                    <groupId>commons-logging</groupId>
-                </exclusion>
-            </exclusions>
+        	<groupId>com.vimal</groupId>
+        	<artifactId>bom</artifactId>
+        	<version>${project.version}</version>
         </dependency>
 	</dependencies>
 

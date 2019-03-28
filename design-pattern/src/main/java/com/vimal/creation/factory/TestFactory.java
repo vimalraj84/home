@@ -5,10 +5,10 @@ import com.vimal.bo.acct.Account;
 public class TestFactory {
 
 	public static void main(String[] args) {
-		Account checkAccount = AccountFactory.accountCreaor("CHECKING");
+		Account checkAccount = AccountFactory.accountCreator("CHECKING");
 		checkAccount.getBalance();
 		
-		Account saveAccount = AccountFactory.accountCreaor("SAVING");
+		Account saveAccount = AccountFactory.accountCreator("SAVINGS");
 		saveAccount.getBalance();
 
 	}
