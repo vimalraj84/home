@@ -1,4 +1,4 @@
-package com.vimal.java8.utils;
+package com.vimal.utils;
 
 import java.io.File;
 import java.util.Arrays;
