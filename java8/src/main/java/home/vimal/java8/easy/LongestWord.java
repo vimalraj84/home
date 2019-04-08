@@ -17,7 +17,7 @@ public class LongestWord {
 		
 		String[] words = ip.split("\\W");
 		
-		System.out.println(Arrays.stream(words).map(i -> i.length)).max(Comparator.comparing(Integer::valueOf)).get();
+//		System.out.println(Arrays.stream(words).map(i -> i.length)).max(Comparator.comparing(Integer::valueOf)).get();
 		
 		
 
