@@ -1,4 +1,4 @@
-package home.vimal.java8.easy;
+package com.vimal.java8.string;
 
 import java.util.Arrays;
 import java.util.Comparator;
