@@ -108,5 +108,18 @@ public class NumberToRoman {
 		}
 		return sb.toString();
 	}
+	
+	public static int pringNumber(String ip) {
+		
+		char[] input = ip.toCharArray();
+		
+		for(char r:input) {
+			
+			
+			
+		}
+		
+		return 0;
+	}
 
 }
