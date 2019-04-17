@@ -7,7 +7,7 @@
 	<artifactId>java8</artifactId>
 
 	<parent>
-		<groupId>com.vimal</groupId>
+		<groupId>com.bilqu</groupId>
 		<artifactId>training</artifactId>
 		<version>1.0-SNAPSHOT</version>
 		<relativePath>../pom.xml</relativePath>
@@ -29,7 +29,7 @@
 			<version>3.6</version>
 		</dependency>
         <dependency>
-        	<groupId>com.vimal</groupId>
+        	<groupId>com.bilqu</groupId>
         	<artifactId>bom</artifactId>
         	<version>${project.version}</version>
         </dependency>
